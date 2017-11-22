@@ -45,9 +45,21 @@ app.get('/scrape', function(req, res){
 
              // Once we have our title, we'll store it to the our json object.
 
-                  json.title = title;
+                json.title = title;
+                json.release = release;
               })
+              // Since the rating is in a different section of the DOM, we'll have to write a new jQuery filter to extract this information.
 
+               $('.star-box-giga-star').filter(function(){
+                   var data = $(this);
+
+                   // The .star-box-giga-star class was exactly where we wanted it to be.
+                   // To get the rating, we can simply just get the .text(), no need to traverse the DOM any further
+
+                   rating = data.text();
+
+                   json.rating = rating;
+               })
         }
     })
 })
