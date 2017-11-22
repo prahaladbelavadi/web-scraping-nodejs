@@ -1,0 +1,24 @@
+{
+  "name": "web-scraping-nodejs",
+  "version": "1.0.0",
+  "description": "A web scraping using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahaladbelavadi/web-scraping-nodejs.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "web",
+    "scraping"
+  ],
+  "author": "Prahalad Belavadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prahaladbelavadi/web-scraping-nodejs/issues"
+  },
+  "homepage": "https://github.com/prahaladbelavadi/web-scraping-nodejs#readme"
+}
