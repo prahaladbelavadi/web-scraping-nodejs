@@ -32,7 +32,7 @@ app.get('/scrape', function(req, res){
 
             // We'll use the unique header class as a starting point.
 
-              $('.header').filter(function(){
+              $('h1').filter(function(){
 
              // Let's store the data we filter into a variable so we can easily see what's going on.
 
@@ -60,7 +60,11 @@ app.get('/scrape', function(req, res){
 
                    json.rating = rating;
                })
+
         }
+
+
+
 
             // To write to the system we will use the built in 'fs' library.
             // In this example we will pass 3 parameters to the writeFile function
